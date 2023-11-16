@@ -7,9 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 public class CommonBase {
-	private static final TimeUnit TimeUnit = null;
 	public WebDriver driver;
-	@SuppressWarnings("deprecation")
+
 	public WebDriver initChromeDriver(String URL)
 	{
 		ChromeOptions options = new ChromeOptions();
@@ -18,7 +17,7 @@ public class CommonBase {
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.get(URL);
-		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit);
+		driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
 		return driver;
 	}
 }
