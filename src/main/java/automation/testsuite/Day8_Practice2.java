@@ -26,6 +26,7 @@ public class Day8_Practice2 extends CommonBase {
 	@Test (priority = 1)
 	public void getLocatorByClassName_TagName ()
 	{
+		pause(3000);
 		System.out.println("Checkbox xuất sứ là: " + driver.findElement(By.className("cursor-pointer")));
 		//System.out.println("Số lượng checkbox có class name là: " + driver.findElements(By.className("cursor-pointer")).size());
 		
@@ -33,6 +34,10 @@ public class Day8_Practice2 extends CommonBase {
 		System.out.println("Thẻ có tên input là: " + input);
 	}
 	
+	private void pause(int i) {
+		// TODO Auto-generated method stub
+		
+	}
 	@AfterMethod 
 	public void closeChromeDriver()
 	{

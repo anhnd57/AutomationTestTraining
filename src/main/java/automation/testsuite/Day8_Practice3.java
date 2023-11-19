@@ -24,16 +24,16 @@ public class Day8_Practice3 extends CommonBase {
 		System.out.println("Location password là: " + driver.findElement(By.id("pass")));
 		
 		//Company
-		System.out.println("Location company là: " + driver.findElement(By.id("company")));
+		System.out.println("Location company là: " + driver.findElement(By.name("company")));
 		
 		
 		//MobileNumber
-		System.out.println("Location MobileNumber là: " + driver.findElement(By.id("mobile number")));
+		System.out.println("Location MobileNumber là: " + driver.findElement(By.name("mobile number")));
 	}
 		
 	@AfterMethod 
 	public void closeChromeDriver()
 	{
-		driver.close(); // đóng cửa sổ
+		//driver.close(); // đóng cửa sổ
 	}
 }

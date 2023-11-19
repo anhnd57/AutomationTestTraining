@@ -1,3 +1,6 @@
-automation\common\CommonBase.class
+automation\testsuite\Day8_Practice2.class
+automation\testsuite\Day8_Practice3.class
 automation\constant\CT_Account.class
 automation\testsuite\Day7_Practice.class
+automation\testsuite\Day8_Practice1.class
+automation\common\CommonBase.class

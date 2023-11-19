@@ -6,72 +6,46 @@
   <version>0.0.1-SNAPSHOT</version>
   <artifactId>autotest</artifactId>
   <packaging>jar</packaging>
+  <properties>
+    <slf4j.version>1.7.25</slf4j.version>
+    <spark.version>1.6.3</spark.version>
+    <surefire-plugin.version>2.20</surefire-plugin.version>
+  </properties>
   <dependencies>
-<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-api</artifactId>
-    <version>1.7.25</version>
-</dependency>
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-jdk14</artifactId>
-    <version>1.7.25</version>
-    <scope>test</scope>
-    
-</dependency>
-
-  <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.4.0</version>
-    <scope>compile</scope>
-</dependency>
-
-
-    <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+    <!-- Add slf4j API frontend binding with JUL backend -->
     <dependency>
-      <groupId>io.github.bonigarcia</groupId>
-      <artifactId>webdrivermanager</artifactId>
-      <version>3.6.0</version>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j.version}</version>
     </dependency>
-
-    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
-<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-jdk14 -->
-
-
-   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-<dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>4.8.1</version>
-</dependency>
-
-
-	<dependency>
-   <groupId>org.seleniumhq.selenium</groupId>
-   <artifactId>selenium-chrome-driver</artifactId>
-   <version>4.0.0</version>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-jdk14</artifactId>
+      <version>${slf4j.version}</version>
+      <!-- When loaded at runtime this will wire up slf4j to the JUL backend -->
+      <scope>runtime</scope>
+    </dependency> 
+    <dependency>
+		<groupId>org.seleniumhq.selenium</groupId>
+		<artifactId>selenium-java</artifactId>
+		<version>4.10.0</version>
 	</dependency>
-	
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.17</version>
-    </dependency>
-
-    <dependency>
-      <groupId>net.sf.json-lib</groupId>
-      <artifactId>json-lib</artifactId>
-      <version>2.4</version>
-      <classifier>jdk15</classifier>
-    </dependency>
-
-    <dependency>
-      <groupId>com.oracle.database.jdbc</groupId>
-      <artifactId>ojdbc8</artifactId>
-      <version>12.2.0.1</version>
+	<dependency>
+		<groupId>org.testng</groupId>
+		<artifactId>testng</artifactId>
+		<version>7.4.0</version>
+		</dependency>	
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	 <dependency>
+        <groupId>net.sf.json-lib</groupId>
+        <artifactId>json-lib</artifactId>
+        <version>2.4</version>
+        <classifier>jdk15</classifier>
     </dependency>
   </dependencies>
-</project>
+
+  </project>
