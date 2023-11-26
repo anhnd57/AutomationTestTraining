@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-18T00:19:18 ICT" name="Default suite" finished-at="2023-11-18T00:19:23 ICT" duration-ms="4678">
+  <suite started-at="2023-11-21T21:20:35 ICT" name="Default suite" finished-at="2023-11-21T21:20:42 ICT" duration-ms="7255">
     <groups>
     </groups>
-    <test started-at="2023-11-18T00:19:18 ICT" name="Default test" finished-at="2023-11-18T00:19:23 ICT" duration-ms="4678">
-      <class name="automation.testsuite.Day8_BTVN">
-        <test-method is-config="true" signature="openChromeDriver()[pri:0, instance:automation.testsuite.Day8_BTVN@bae7dc0]" started-at="2023-11-18T00:19:18 ICT" name="openChromeDriver" finished-at="2023-11-18T00:19:23 ICT" duration-ms="4599" status="PASS">
+    <test started-at="2023-11-21T21:20:35 ICT" name="Default test" finished-at="2023-11-21T21:20:42 ICT" duration-ms="7255">
+      <class name="automation.testsuite.Day12_Dropdownlist">
+        <test-method is-config="true" signature="openChrome()[pri:0, instance:automation.testsuite.Day12_Dropdownlist@bae7dc0]" started-at="2023-11-21T21:20:35 ICT" name="openChrome" finished-at="2023-11-21T21:20:38 ICT" duration-ms="2641" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openChromeDriver -->
-        <test-method signature="GetLocator()[pri:0, instance:automation.testsuite.Day8_BTVN@bae7dc0]" started-at="2023-11-18T00:19:23 ICT" name="GetLocator" finished-at="2023-11-18T00:19:23 ICT" duration-ms="50" status="PASS">
+        </test-method> <!-- openChrome -->
+        <test-method signature="SelectOneOptionFromDropdownlist()[pri:0, instance:automation.testsuite.Day12_Dropdownlist@bae7dc0]" started-at="2023-11-21T21:20:38 ICT" name="SelectOneOptionFromDropdownlist" finished-at="2023-11-21T21:20:42 ICT" duration-ms="4588" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- GetLocator -->
-      </class> <!-- automation.testsuite.Day8_BTVN -->
+        </test-method> <!-- SelectOneOptionFromDropdownlist -->
+      </class> <!-- automation.testsuite.Day12_Dropdownlist -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
