@@ -35,7 +35,7 @@ public class Day12_Dropdownlist extends CommonBase {
 		System.out.println("dropdownlist first option is: " +dropdownlist.getFirstSelectedOption().getText());
 		Thread.sleep(2000);
 		
-		//Chọn Tuesday bằng cách VisibleText
+		//Chọn Tuesday bằng Index
 		selectTag.click();
 		dropdownlist.selectByIndex(3);
 		System.out.println("dropdownlist first option is: " +dropdownlist.getFirstSelectedOption().getText());
