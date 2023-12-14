@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.LoginTest_Factory">
+      <class name="automation.testsuite.Alert_Selenium">
         <methods>
-          <include name="LoginSuccessfully"/>
-          <include name="openChrome"/>
+          <include name="AlertSelenium"/>
+          <include name="InitChromeDriver"/>
         </methods>
-      </class> <!-- automation.testsuite.LoginTest_Factory -->
+      </class> <!-- automation.testsuite.Alert_Selenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
